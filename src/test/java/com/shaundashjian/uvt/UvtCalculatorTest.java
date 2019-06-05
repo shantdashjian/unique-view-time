@@ -15,7 +15,7 @@ public class UvtCalculatorTest {
 	}
 	
     @Test
-    void test_0000_100000_should_return_100000() {
+    void test_0_100000_should_return_100000() {
         uvtCalculator.addFragment(new Fragment(0, 100000));
         int expectedUvt = 100000;
         
@@ -23,7 +23,7 @@ public class UvtCalculatorTest {
     }
     
     @Test
-    void test_0000_100000_200000_300000_should_return_200000() {
+    void test_0_100000_200000_300000_should_return_200000() {
     	uvtCalculator.addFragment(new Fragment(0, 100000));
     	uvtCalculator.addFragment(new Fragment(200000, 300000));
     	int expectedUvt = 200000;
@@ -32,7 +32,7 @@ public class UvtCalculatorTest {
     }
     
     @Test
-    void test_0000_100000_0000_50000_should_return_100000() {
+    void test_0_100000_0000_50000_should_return_100000() {
     	uvtCalculator.addFragment(new Fragment(0, 100000));
     	uvtCalculator.addFragment(new Fragment(0, 50000));
     	int expectedUvt = 100000;
